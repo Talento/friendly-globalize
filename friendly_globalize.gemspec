@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "binding_of_caller", "~> 0.7.2"
   spec.add_development_dependency "minitest-rails-capybara", "~> 2.1.1"
   spec.add_development_dependency "minitest-reporters", "~> 1.0.5"
+  spec.add_development_dependency "database_cleaner", "~> 1.3.0"
 end
