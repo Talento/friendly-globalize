@@ -21,3 +21,4 @@ tmp
 *.a
 mkmf.log
 test/db/database.yml
+test/debug.log
