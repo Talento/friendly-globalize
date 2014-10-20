@@ -9,6 +9,7 @@ require 'pry'
 
 require 'globalize-accessors'
 require 'friendly_id'
+require 'friendly_id/globalize'
 
 
 I18n.available_locales = [:es, :en]

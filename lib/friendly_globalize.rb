@@ -2,11 +2,12 @@ require "friendly_globalize/version"
 require "friendly_id"
 require "globalize"
 require "globalize-accessors"
+require 'friendly_id/globalize'
 
 module FriendlyGlobalize
 
   extend ActiveSupport::Concern
-  
+
   included do
     before_save :set_localized_slug_and_remove_blanks
   end
