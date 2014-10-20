@@ -6,8 +6,8 @@ require "globalize-accessors"
 module FriendlyGlobalize
 
   extend ActiveSupport::Concern
-  extend FriendlyId
-
+  include FriendlyId
+  
   included do
     before_save :set_localized_slug_and_remove_blanks
   end
@@ -21,7 +21,7 @@ module FriendlyGlobalize
   def set_localized_slug
     each_locale_except_current do |localized_friendly_id_field, locale|
       set_friendly_id(self.send(localized_friendly_id_field), locale) unless self.send(localized_friendly_id_field).blank?
-    end    
+    end
   end
 
   def remove_blank_from_friendly_field
