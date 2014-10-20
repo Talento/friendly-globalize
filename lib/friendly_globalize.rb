@@ -6,7 +6,6 @@ require "globalize-accessors"
 module FriendlyGlobalize
 
   extend ActiveSupport::Concern
-  include FriendlyId
   
   included do
     before_save :set_localized_slug_and_remove_blanks

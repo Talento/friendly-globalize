@@ -5,6 +5,7 @@ require 'database_cleaner'
 require 'active_support'
 require 'active_support/test_case'
 require 'logger'
+require 'pry'
 
 require 'globalize-accessors'
 require 'friendly_id'
