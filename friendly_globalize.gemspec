@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "globalize-accessors", "~> 0.1.5"
-  spec.add_dependency 'globalize', '~> 4.0', '>= 4.0.2'
+  spec.add_dependency "globalize-accessors", "~> 0.2.1"
+  spec.add_dependency "globalize", "~> 5.0.1"
   spec.add_dependency "friendly_id-globalize", "~> 1.0.0.alpha1"
-  spec.add_dependency 'friendly_id', '~> 5.0', '>= 5.0.4'
+  spec.add_dependency "friendly_id", "~> 5.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency 'rake', '~> 0'
